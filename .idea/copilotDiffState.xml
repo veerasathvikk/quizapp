@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/frontend/static.json">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/frontend/static.json" />
+              <option name="updatedContent" value="{&#10;  &quot;routes&quot;: [&#10;    {&#10;      &quot;src&quot;: &quot;/.*&quot;,&#10;      &quot;dest&quot;: &quot;/index.html&quot;&#10;    }&#10;  ]&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
