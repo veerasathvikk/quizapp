@@ -1,0 +1,104 @@
+.container {
+  max-width: 600px;
+  margin: 48px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 48px; /* Increased space below title */
+  text-align: center;
+  color: #222;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin-bottom: 16px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #4f46e5; /* Indigo-600 */
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #4338ca; /* Indigo-700 */
+  text-decoration: underline;
+}
+
+.boxGrid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #f3f4f6;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(79,70,229,0.07);
+  padding: 40px 32px;
+  min-width: 180px;
+  flex: 1 1 220px;
+  max-width: 320px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.box:hover {
+  background: #e0e7ff;
+  box-shadow: 0 4px 24px rgba(79,70,229,0.13);
+}
+
+.boxLink {
+  color: #4f46e5;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.boxLink:hover {
+  color: #4338ca;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .boxGrid {
+    gap: 20px;
+  }
+  .box {
+    min-width: 160px;
+    padding: 32px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .boxGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .box {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 10px;
+  }
+}

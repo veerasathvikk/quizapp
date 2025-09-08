@@ -1,0 +1,99 @@
+.container {
+  max-width: 600px;
+  margin: 48px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #222;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.listItemContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.link {
+  color: #4f46e5; /* Indigo-600 */
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.15rem;
+  transition: color 0.3s ease;
+  /* Make quiz name font bigger to match button */
+}
+
+.link:hover {
+  color: #4338ca; /* Indigo-700 */
+}
+
+.deleteBtn {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(79,70,229,0.08);
+  text-align: left;
+  display: inline-block;
+}
+
+.deleteBtn:hover {
+  background: #4338ca;
+}
+
+.modifyBtn {
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(16,185,129,0.08);
+  text-align: left;
+  display: inline-block;
+}
+
+.modifyBtn:hover {
+  background: #059669;
+}

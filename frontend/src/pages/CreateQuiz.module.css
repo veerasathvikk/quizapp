@@ -1,0 +1,170 @@
+.container {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: #333;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 6px #c7d2fe;
+}
+
+.textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.questionCard {
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #fafafa;
+}
+
+.questionHeader {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.questionInput {
+  flex: 1;
+}
+
+.removeQuestionBtn {
+  background: none;
+  border: none;
+  color: #dc2626; /* red-600 */
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.removeQuestionBtn:hover {
+  color: #b91c1c; /* red-700 */
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.optionInput {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  color: #333;
+}
+
+.optionInput:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 6px #c7d2fe;
+}
+
+.removeOptionBtn {
+  background: none;
+  border: none;
+  color: #dc2626;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.removeOptionBtn:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.removeOptionBtn:hover:not(:disabled) {
+  color: #b91c1c;
+}
+
+.addOptionBtn {
+  align-self: flex-start;
+  background-color: #e5e7eb; /* gray-200 */
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addOptionBtn:hover {
+  background-color: #d1d5db; /* gray-300 */
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.addQuestionBtn,
+.submitBtn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  color: white;
+  user-select: none;
+}
+
+.addQuestionBtn {
+  background-color: #3b82f6; /* blue-500 */
+}
+
+.addQuestionBtn:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.submitBtn {
+  background-color: #22c55e; /* green-500 */
+}
+
+.submitBtn:hover {
+  background-color: #16a34a; /* green-600 */
+}
