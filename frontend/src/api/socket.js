@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
 // Adjust the URL if your backend runs elsewhere
-const SOCKET_URL = import.meta.env.VITE_API_BASE_URL;
+const SOCKET_URL = import.meta.env.VITE_API_BASE_URL1;
 
 const socket = io(SOCKET_URL, {
   autoConnect: true,
