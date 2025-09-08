@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 require('dotenv').config(); // This will load the environment variables
 
 // Connection string using the environment variable
-const connectionString = process.env.DB_CONNECTION_STRING;
+const connectionString = process.env.DATABASE_URL;
 
 // Connection configuration using the connection string
 const db = new Pool({
