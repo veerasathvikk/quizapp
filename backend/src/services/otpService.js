@@ -13,10 +13,16 @@ async function requestOTP(email) {
     [email.toLowerCase(), otpHash, expiresAt]
   );
 
-  // Send OTP via email (disabled for testing)
-  // await sendEmail(email, 'Your Quiz App OTP', `Your OTP is: ${otp} (valid for 5 minutes)`); // old code
-  // For testing, print OTP to console
+  // Print OTP to console
   console.log(`OTP for ${email}: ${otp}`);
+
+  // Try to send OTP via email
+  try {
+    await sendEmail(email, 'Your Quiz App OTP', `Your OTP is: ${otp} (valid for 5 minutes)`);
+    console.log(`OTP email sent successfully to ${email}`);
+  } catch (error) {
+    console.log(`Failed to send OTP email to ${email}:`, error.message);
+  }
 
   return true;
 }
