@@ -40,10 +40,10 @@ export default function Navbar() {
               </span>
               <div className={styles.userDropdown}>
                 <div className={styles.dropdownItem}>
-                  <strong>Name:</strong> {user.name}
+                   {user.name}
                 </div>
                 <div className={styles.dropdownItem}>
-                  <strong>Email:</strong> {user.email}
+                   {user.email}
                 </div>
                 <div className={styles.dropdownItem}>
                   <button
